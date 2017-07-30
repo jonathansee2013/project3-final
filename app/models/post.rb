@@ -10,7 +10,7 @@ class Post < ApplicationRecord
   end
 
   def display_day_published
-    "Published #{created_at.strftime('%-d %-b, %Y')}"
+    "Published on #{created_at.strftime('%-d %-b %Y at %H:%M:%S')}"
   end
 
 end
